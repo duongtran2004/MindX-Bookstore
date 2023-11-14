@@ -1,0 +1,6 @@
+1. Tải hết asset về 
+2. Semantic HTML: Code khung, đặt tên class chuẩn chỉ
+3. Header,footer
+
+Media Queries:
+- Mobile (576) => tablet (792)
