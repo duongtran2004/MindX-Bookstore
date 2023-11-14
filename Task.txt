@@ -1,6 +1,128 @@
+VIỆC CẦN LÀM HIỆN TẠI:
+
 1. Tải hết asset về 
 2. Semantic HTML: Code khung, đặt tên class chuẩn chỉ
 3. Header,footer
 
 Media Queries:
 - Mobile (576) => tablet (792)
+=> Giữ nguyên tên div và format của New Books
+Best November Books! Thanksgiving, Autumn, Turkeys, Grateful, Gracias, Parade, and Traditions!
+=> Chuyển tên div thành best seller, nhưng vẫn giữ nguyên format
+
+TỔNG QUAN VỀ DỰ ÁN CỦA MÌNH
+
+Mình sẽ chỉ làm khung của website HTML + giao diện (CSS) 
+Link github repository: https://github.com/duongtran2004/MindX-Bookstore
+Các dùng lệnh github để tải code về, upload code lên, cập nhật code: 
+Các framework CSS mình có thể dùng để làm nhanh hơn: 
+1. Less CSS: dùng để viết CSS nhanh hơn, gọn hơn
+2. Boostrap: có thiết kế sẵn các tính năng CSS 
+3. Tailwind: có thiết kế sẵn các tính năng CSS 
+
+Sample page mình sẽ clone lại: https://bookshop.org/ 
+Tuy nhiên mình sẽ không làm hết mà chỉ giới hạn những nội dung sau đây: 
+Những page + việc cần làm: 
+4 pages: 
+
+I. Page 1: Homepage (index.html): Cắt layout
+https://bookshop.org/
+a. header : 
+Favicon+ Logo +  Search box  + Sign in + My Cart 
+b. Nav bar:
+c. Banner/Slider as a Carousel: https://getbootstrap.com/docs/5.3/components/carousel/ 
+d. Book preview (Mình chỉ làm 3 mục thôi)
+- New Arrival 
+- Best Seller 
+- On Sales (làm giống phần Adorable Book & Stuffy Pairings!)
+e. Sign up for our Newsletter 
+f. Footer
+- Certificate 
+- Footer nav bar 
+- Social Media 
+- Payment method 
+- Company's logo 
+II. Page 2:  Books list 
+https://bookshop.org/lists/new-books 
+Mình sẽ chỉ làm 1 page book list của new books thôi
+- Keep the same header and footer
+- Banner/Slider 
+- Introduction paragraph
+- Book lists. For each book: 
++ Book's Image (shading effect) 
++ Book name 
++ Author 
++ Old price, new price 
++ Book intro 
++ Add to cart button 
++ Line break between book 
+
+3. Book's detail: 
+https://bookshop.org/p/books/untitled-jc-to-be-confirmed-atria/19718851?ean=9781982151393&listref=new-books 
+(làm tượng trưng 3 book thôi)
+Book 1: 
+Class: A Memoir of Motherhood, Hunger, and Higher Education
+https://bookshop.org/p/books/untitled-jc-to-be-confirmed-atria/19718851?ean=9781982151393&listref=new-books
+Book 2: 
+Cross-Stitch
+https://bookshop.org/p/books/cross-stitch-jazmina-barrera/19461133?ean=9781949641530&listref=new-books
+Book 3: 
+How to Build a Boat
+https://bookshop.org/p/books/how-to-build-a-boat/19657451?ean=9781771965859&listref=new-books
+Requirements:
+- Keep the same header and footer 
+- Book images  (shading effect) 
+- Book name  
+- Author 
+- Old price, new price (in a border-box). The only format is hardcover.
+- Availability (available/not available)
+- Buy button: Add to cart + Add to wishlist 
+- Get the audio book link 
+- Book description 
+- Book details 
+- Affiliate 
+- About the author: Author's description + Embedded ratings/comment section
+- Review
+
+IV. Page 4: Shopping cart: 
+Sample shopping cart page: https://ibb.co/4stMvz9
+(Mình chỉ làm tượng trưng 2 sản phẩm thôi) 
+Requirements:
+- Keep the same header and footer 
+- Tittle + subtittle 
+- Check out button + Value 
+- Item: Image(shading effect) + Name, author, type (hardcover/paperback/audio/ebook), 
+availability (available) + Quanity + Price (old price, new price), delete button
+- Total price 
+- Box: You will raise ... for local bookstore
+- Buttons: Update + Checkout
+- Buttons:  Empty cart + Continue shopping
+- 2 books preview section: 
+new arrival + best seller: copy and embbedded from the homepage
+
+=> Thiết kế sơ sơ layout homepage (trước buổi học thứ 3), rồi mới nhắn cho Tuấn. Hỏi xem Tuấn muốn xưng hô ntn?
+
+(Thinking + Mindset:
+1. Mobile first + devices responsive
+2. Page flows: page list + page structures
+3. Further develoment: Adding javascripst (engine+ interactive) + Data (SQL, Mongo)
+
+Scale? 
+Task chính
+I. Assets: 
+Theme: history
+3 catagories divided by cultures: (later on develop javascript to sort by time, nien dai)
+
+
+
+II. Index (homepage). Complete this page first before spreading to other pages
+
+
+
+
+Additional features (if have time)
+- Back to top button
+- Breadcumb technique for better navigation
+- Dark mode button
+- Zoom in / zoom out book image
+- Hoover effects on books
