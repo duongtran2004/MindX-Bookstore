@@ -87,7 +87,22 @@ header {
     }
   }
 }
+.book-slides {
+  white-space: nowrap;
+  overflow: auto;
 
+  a {
+    // display: inline-block;
+    // color: white;
+    // text-align: center;
+  }
+  a:hover {
+    //làm nổi lên
+  }
+  img {
+  }
+  display: flex;
+}
 .newsletter {
   background-color: #fff1e6;
   gap: 5%;
@@ -124,16 +139,16 @@ footer {
   justify-content: center;
 
   .certificate {
-    // phần .certificate bị đẩy quá nhiều qua bên phải
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     img {
-      max-height: 30%;
-      max-width: 50%;
+      width: 50%;
     }
   }
   .footer-nav-bar {
+    flex: 1;
     color: white;
     display: flex;
     flex-direction: column;
@@ -142,8 +157,10 @@ footer {
     text-align: center;
     gap: 20px;
     font-size: 1.5rem;
+    font-size: small;
   }
   .footer-third-column {
+    flex: 1;
     color: white;
     display: flex;
     flex-direction: column;
@@ -180,4 +197,5 @@ footer {
   font-size: 1.5rem;
   padding-top: 2%;
   padding-bottom: 2%;
+  font-size: small;
 }
