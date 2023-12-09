@@ -10,6 +10,7 @@ Media Queries:
 Best November Books! Thanksgiving, Autumn, Turkeys, Grateful, Gracias, Parade, and Traditions!
 => Chuyển tên div thành best seller, nhưng vẫn giữ nguyên format
 
+Xem Yotube làm e-commerce website để bắt chước, hiểu khái niệm làm web và hình dung 1 dự án web sẽ diễn ra như thế nào? 
 TỔNG QUAN VỀ DỰ ÁN CỦA MÌNH
 
 Mình sẽ chỉ làm khung của website HTML + giao diện (CSS) 

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindX-BookStore</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style\style.css" />
+    <!-- External Javscript file -->
+    <script src="script\script.js"></script>
+    <!-- CREDITS:
+         Sample page: Bookshop org
+        Home page: https://bookshop.org/
+        Book list: https://bookshop.org/lists/new-books
+        Book detail:https://bookshop..org/p/books/day-michael-cunningham/20043945?ean=9780399591341&listref=new-books
+        Order Cart: https://bookshop.org/cart 
+      -->
+    <!-- Tools used: 
+    CSS: LESS CSS, Bootstrap, Tailwind
+     -->
+    <!-- Available responsive screen-size breakpoints:
+     - 576px and below: mobile 
+     - 576px to 792px: Tablet
+     - 792px and above: Laptop and Desktop -->
+  </head>
+  <body>
+    <!-- Nhờ anh Luân/ Đức check hộ xem html đã mạch lạc chưa (semantic) -->
+    <header>
+      <section class="nav-bar">
+        <div class="upper-ribbon">
+          <div class="discount">
+            <span
+              >Save 15% OFF GIFT GUIDE PICKS HERE or give them any book they
+              want with a GIFT CARD HERE!</span
+            >
+          </div>
+          <div class="change-language">
+            <img src="assets/us-flag.jpeg" alt="us-flag" />
+          </div>
+        </div>
+        <div class="upper-bar">
+          <div class="store-logo">
+            <img src="assets/store-logo.svg" alt="store-logo-header" />
+          </div>
+          <div class="search-box">
+            <input
+              type="text"
+              size="40"
+              placeholder="Search books, atuthors, ISBNs"
+            />
+            <img src="assets/search-box-google.svg" alt="search-box-google" />
+          </div>
+          <div class="account">
+            <span>Choose a Bookstore</span>
+            <span>Sign In</span>
+            <img src="assets/cart.svg" alt="cart" />
+          </div>
+        </div>
+
+        <div class="nav-bar-items">
+          <span>Gift Cards </span>
+          <span>Special Offers</span>
+          <span>New Books</span>
+          <span>Wishlists & Registries</span>
+          <span>Best Sellers</span>
+          <span>Fiction</span>
+          <span>Non Fiction</span>
+          <span>YA</span>
+          <span>Kids</span>
+          <span>Game & Puzzles</span>
+        </div>
+        <hr />
+        <div class="donated-money">
+          <div class="donated-amount">$28,928,173.64</div>
+
+          <span> raised for local bookstores</span>
+        </div>
+      </section>
+      <section class="banner">
+        <img src="assets/banner1.webp" alt="banner1" />
+      </section>
+    </header>
+    <main>
+      <section class="book-details">
+        <img src="" alt="" />
+        <h1>Book Name</h1>
+        <h3>Author</h3>
+        FORMAT
+        <span class="format">format</span>
+        <span class="price">price</span>
+      </section>
+
+      <br /><br />
+      <section class="newsletter">
+        <div class="text">
+          <h1>Sign up for our Newsletter</h1>
+          <span>Tell us what books you love.</span>
+        </div>
+        <div class="signup-button">
+          <button>SIGN UP</button>
+          <!-- <a href=""></a> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="certificate">
+        <img src="assets/climate-neutral-certificate.webp" alt="" />
+      </div>
+      <div class="footer-nav-bar">
+        <span>About</span>
+        <span>Support/Help</span>
+        <span>Become and Affiliate</span>
+        <span>Gift Cards</span>
+        <span>Bookshop.org for Authors</span>
+        <span>Bookshop.org for Bookstores</span>
+        <span>Indiebound -Bpokshop.org Changeover FAQ</span>
+        <span>Contact</span>
+        <span>Returns and Refund Policy</span>
+      </div>
+      <div class="footer-third-column">
+        <div class="social-media">
+          <span>Follow us</span> <br />
+
+          <img src="assets/twitter-logo.svg" alt="twitter-logo" />
+          <img src="assets/facebook-logo.svg" alt="facebook-logo" />
+          <img src="assets/instagram-logo.svg" alt="instagram-logo" />
+          <img src="assets/thread-logo.svg" alt="thread-logo" />
+          <img src="assets/tiktok-logo.svg" alt="tiktok-logo" />
+        </div>
+        <div class="payment-methods">
+          Payments Accepted <br />
+
+          <img src="assets/payment-methods.webp" alt="payment-methods" />
+        </div>
+        <div class="company-logo">
+          <img
+            src="assets/b-corporotion-certificate.webp"
+            alt="b-corporotion-certificate"
+          />
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <span>© 2023 All Rights Reserved</span>
+      <span>Terms of Use</span>
+      <span> Privacy Notice</span>
+    </div>
+    <!-- <script src="./data/books-detail.js"></script> -->
+    <!-- <script type="module" src="./script/books-detail.js"></script> -->
+    <script type="module" src="/script/books-detail.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
