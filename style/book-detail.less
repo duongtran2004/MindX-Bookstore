@@ -1,0 +1,297 @@
+// out: "book-detail.css", compress: true, sourceMap: true
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+header {
+  .nav-bar {
+  }
+  .upper-ribbon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff1e6;
+    padding-right: 2%;
+    .discount {
+      width: 100%;
+      text-align: center;
+    }
+    .change-language {
+      img {
+        // how to change with and height of image so it appear inside the bar?
+      }
+    }
+  }
+  .banner {
+    img {
+      width: 100%;
+    }
+  }
+  //
+  .upper-bar {
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    .search-box {
+      border-radius: 100px;
+      border: none;
+      background-color: #f6f5f7;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        border: none;
+        background-color: #f6f5f7;
+        padding-left: 2%;
+        border-radius: 100px;
+      }
+      img {
+        padding-right: 20px;
+      }
+    }
+    .account {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .nav-bar-items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  hr {
+    color: grey;
+  }
+  .donated-money {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    .donated-amount {
+      color: #573ba3;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+}
+.catagory {
+  h1 {
+    margin-left: 12%;
+  }
+  img {
+    margin-left: 12%;
+  }
+}
+.book-slides {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  overflow: auto;
+
+  a {
+    // display: inline-block;
+    // color: white;
+    // text-align: center;
+  }
+  a:hover {
+    //làm nổi lên
+  }
+  img {
+  }
+  display: flex;
+}
+.newsletter {
+  background-color: #fff1e6;
+  gap: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text {
+    line-height: 1px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    h1 {
+      color: #2b0f42;
+      font-size: 2.5rem;
+    }
+  }
+  .signup-button {
+    button {
+      background-color: #573ba3;
+      color: white;
+      font-weight: bold;
+      padding-right: 60px;
+      padding-left: 60px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: none;
+      border-radius: 100px;
+    }
+  }
+}
+
+footer {
+  background-color: #2b0f42;
+  display: flex;
+  justify-content: center;
+
+  .certificate {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 50%;
+    }
+  }
+  .footer-nav-bar {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-size: small;
+  }
+  .footer-third-column {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .social-media {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .payment-methods {
+    //how to make image and text the same width?
+    display: inline-block;
+
+    font-size: 2rem;
+
+    img {
+      display: inline;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
+.copyright {
+  background-color: #2b0f42;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  gap: 5%;
+  font-size: 1.5rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: smallg;
+}
+
+//book-detail styling
+.book-details {
+  display: flex;
+  justify-content: center;
+}
+.thumbnail {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  img {
+  }
+}
+.content {
+  gap: 10px;
+  flex: 1;
+  .book-name {
+    font-size: xx-large;
+  }
+  .author {
+    color: #7744a3;
+  }
+  .format {
+    width: 20%;
+    padding: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    border: solid #7744a3;
+    border-radius: 10px;
+    background-color: #f6f5f7;
+    .book-type {
+      color: #7744a3;
+    }
+    .old-price {
+      color: #de2454;
+      text-decoration: line-through;
+    }
+    .new-price {
+      margin-left: 50px;
+      font-weight: bold;
+    }
+  }
+  .availability {
+    color: #1fa5a3;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    //general styling for buttons
+    button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    //specific styling for each button
+    #btn1 {
+      color: white;
+      background-color: #de2454;
+      border: transparent;
+    }
+    #btn2 {
+      margin-left: 15px;
+      color: #7744a3;
+      background-color: white;
+      border: solid #7744a3;
+    }
+  }
+}
+.description {
+}
+
+.technical-details {
+  .left-columns {
+    padding-right: 15px;
+    color: #808090;
+  }
+  .right-columns {
+  }
+}
+.affiliate {
+  .affiliate-box {
+    background-color: #f6f5f7;
+    padding: 15px;
+  }
+}

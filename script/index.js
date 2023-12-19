@@ -1,22 +1,15 @@
-import bookDetails from "../data/books-detail.js";
 // Import bookDetails from "../data/books-detail.js";
-
-// ... (other existing code)
+import bookDetails from "../data/books-detail.js";
+// Find element with class book=slides, and store it into a variable
 const BookSlide = document.querySelector(".book-slides");
 
-// Function to handle thumbnail clicks
-const handleThumbnailClick = (event) => {
-  // event.preventDefault(); // Prevent default link behavior
-  // if (event.target.tagName === "IMG") {
-  //   const bookId = event.target.dataset.bookId; // Get book ID from the data attribute
-  //   // Navigate to the respective book detail page using the bookId
-  //   // window.location.href = `./book-detail.html?id=${bookId}`;
-  // }
-};
+// Function to handle thumbnail clicks (empty function for now, then assign as event handler to BookSlide)
 
-// Add event listener to book slide container for delegated clicks
+const handleThumbnailClick = (event) => {};
+
+// Add event listener to book slide container
 BookSlide.addEventListener("click", handleThumbnailClick);
-
+// =>trigger when any emlment inside BookSlide container is clicked
 // Rendering book thumbnails
 BookSlide.innerHTML = bookDetails
   .map(

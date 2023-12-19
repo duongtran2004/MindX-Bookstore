@@ -4,12 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MindX-BookStore</title>
+    <!-- bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import icons from FontIcon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <!-- External CSS file -->
-    <link rel="stylesheet" href="style\style.css" />
+    <link rel="stylesheet" href="style/book-detail.css" />
     <!-- External Javscript file -->
     <script src="script\script.js"></script>
+
     <!-- CREDITS:
          Sample page: Bookshop org
         Home page: https://bookshop.org/
@@ -42,7 +62,9 @@
         </div>
         <div class="upper-bar">
           <div class="store-logo">
-            <img src="assets/store-logo.svg" alt="store-logo-header" />
+            <a href="index.html">
+              <img src="assets/store-logo.svg" alt="store-logo-header"
+            /></a>
           </div>
           <div class="search-box">
             <input
@@ -78,18 +100,158 @@
           <span> raised for local bookstores</span>
         </div>
       </section>
+      <!-- BootsTrap Carousel Banner  -->
       <section class="banner">
-        <img src="assets/banner1.webp" alt="banner1" />
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="assets\banner1.webp"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="assets/banner2.webp"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="assets/banner3.webp"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </section>
     </header>
     <main>
       <section class="book-details">
-        <img src="" alt="" />
-        <h1>Book Name</h1>
-        <h3>Author</h3>
-        FORMAT
-        <span class="format">format</span>
-        <span class="price">price</span>
+        <div class="thumbnail">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </div>
+
+        <div class="content">
+          <h1 class="bookname">Flores and Miss Paula</h1>
+          <h3 class="author">Melissa Rivero (Author)</h3>
+          FORMAT <br /><br />
+          <div class="format">
+            <h3 class="book-type">Hardcover</h3>
+            <span class="old-price">29</span>
+            <span class="new-price">27</span>
+          </div>
+          <div class="availability">
+            <i class="fa fa-check-circle mr-1 text-accent text-fa"></i>
+            <span>AVAILABLE</span>
+          </div>
+          <div class="buttons">
+            <button id="btn1">ADD TO CART</button>
+
+            <button id="btn2">ADD TO WIHSLIST</button>
+          </div>
+          <div class="description">
+            <h2>Description</h2>
+            <p class="description-paragraph">
+              Set in the mountains of southern Appalachia, Demon Copperhead is
+              the story of a boy born to a teenaged single mother in a
+              single-wide trailer, with no assets beyond his dead father's good
+              looks and copper-colored hair, a caustic wit, and a fierce talent
+              for survival. Relayed in his own unsparing voice, Demon braves the
+              modern perils of foster care, child labor, derelict schools,
+              athletic success, addiction, disastrous loves, and crushing
+              losses. Through all of it, he reckons with his own invisibility in
+              a popular culture where even the superheroes have abandoned rural
+              people in favor of cities. Many generations ago, Charles Dickens
+              wrote David Copperfield from his experience as a survivor of
+              institutional poverty and its damages to children in his society.
+              Those problems have yet to be solved in ours. Dickens is not a
+              prerequisite for readers of this novel, but he provided its
+              inspiration. In transposing a Victorian epic novel to the
+              contemporary American South, Barbara Kingsolver enlists Dickens'
+              anger and compassion, and above all, his faith in the
+              transformative powers of a good story. Demon Copperhead speaks for
+              a new generation of lost boys, and all those born into beautiful,
+              cursed places they can't imagine leaving behind.
+            </p>
+          </div>
+      
+          <div class="technical-details">
+            <table>
+              <tr>
+                <td class="left-columns"><span>Price</span></td>
+                <td class="right-columns"><span class="old-price">29</span> <span style="margin-left: 15px;" class="new-price">27</span</td>
+              </tr>
+           
+              <tr>
+                <td class="left-columns"><span class="publisher">Publisher</span></td>
+                <td class="right-columns"><span>ahihi</span></td>
+              </tr>
+              <tr>
+                <td class="left-columns"><span class="publish-date">Publish Date</span></td>
+                <td class="right-columns"><span>ahihi</span></td>
+              </tr>
+              <tr>
+                <td class="left-columns"><span class="page">Pages</span></td>
+                <td class="right-columns"><span>ahihi</span></td>
+              </tr>
+              <tr>
+                <td class="left-columns"><span class="dimension">Dimensions</span></td>
+                <td class="right-columns"><span>ahihi</span></td>
+              </tr>
+              <tr>
+                <td class="left-columns"><span class="language">Language</span></td>
+                <td class="right-columns"><span>ahihi</span></td>
+              </tr>
+              <tr>
+                <td class="left-columns"><span class="book-type">Type</span></td>
+                <td class="right-columns"><span>ahihi</span></td>
+              </tr>
+             
+            </table>
+          </div>
+          <div class="affiliate">
+            <h2>Earn by promoting books</h2>
+            <div class="affiliate-box">
+             
+              <span
+                >Earn money by sharing your favorite books through our Affiliate
+                program.</span
+              >
+              <br /> <br>
+              <img src="assets/store-logo.svg" alt="store-logo">
+              <span style="color: #7744a3 ;font-weight: bold;">BECOME AN AFFILIATE</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <br /><br />
