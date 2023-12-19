@@ -27,10 +27,15 @@ const bookNameElement = document.querySelector(".bookname");
 const authorElement = document.querySelector(".author");
 //class: book-type
 const bookTypeElement = document.querySelector(".book-type");
+
 //class: old-price
 const oldPriceElement = document.querySelector(".old-price");
 //class: new-price
 const newPriceElement = document.querySelector(".new-price");
+//class: old-price
+const oldPriceBelowElement = document.querySelector(".old-price-below");
+//class: new-price
+const newPriceBelowElement = document.querySelector(".new-price-below");
 //class: description-paragraph
 const descriptionElement = document.querySelector(".description-paragraph");
 //class: publisher
@@ -94,9 +99,11 @@ authorElement.innerHTML = `${author}`;
 bookTypeElement.innerHTML = `${type}`;
 oldPriceElement.innerHTML = `${oldPrice}`;
 newPriceElement.innerHTML = `  ${newPrice}`;
-
+oldPriceBelowElement.innerHTML = `${oldPrice}`;
+newPriceBelowElement.innerHTML = `${newPrice}`;
 descriptionElement.innerHTML = `${description}`;
 publisherElement.innerHTML = `${publisher}`;
 publishDateElement.innerHTML = `${publishDate}`;
 dimensionElement.innerHTML = `${dimensions}`;
 languageElement.innerHTML = `${language}`;
+bookTypeElement.innerHTML = `${type}`;
