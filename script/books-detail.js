@@ -27,7 +27,8 @@ const bookNameElement = document.querySelector(".bookname");
 const authorElement = document.querySelector(".author");
 //class: book-type
 const bookTypeElement = document.querySelector(".book-type");
-
+//class: book-type
+const bookTypeBelowElement = document.querySelector(".book-type-below");
 //class: old-price
 const oldPriceElement = document.querySelector(".old-price");
 //class: new-price
@@ -106,4 +107,10 @@ publisherElement.innerHTML = `${publisher}`;
 publishDateElement.innerHTML = `${publishDate}`;
 dimensionElement.innerHTML = `${dimensions}`;
 languageElement.innerHTML = `${language}`;
-bookTypeElement.innerHTML = `${type}`;
+
+bookTypeBelowElement.innerHTML = `${type}`;
+
+console.log(
+  "🚀 ~ file: books-detail.js:112 ~ bookTypeElement:",
+  bookTypeElement
+);
