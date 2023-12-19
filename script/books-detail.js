@@ -1,13 +1,13 @@
 //import product book-deatils data, then store it in a varianle (product
-import products from "../data/books-detail.js";
+import bookDetails from "../data/books-detail.js";
 //print product list on the console
-console.log("🚀 ~ file: books-detail.js:2 ~ products:", products);
+console.log("🚀 ~ file: books-detail.js:2 ~ bookDetail:", bookDetails);
 //get the product ID from the URL (address bar)
 const urlParams = new URLSearchParams(location.search);
 const prodId = urlParams.get("id");
 //find product detail by product ID
 //loop thorugh product array => find the correct id
-const getProdById = (id) => products.find((item) => item.bookID === +id);
+const getProdById = (id) => bookDetails.find((item) => item.bookID === +id);
 //store product deatils as object
 const productDetails = getProdById(prodId);
 //print product-detail of specific on the console
@@ -19,7 +19,7 @@ console.log("🚀 ~ file: books-detail.js:9 ~ productDetails:", productDetails);
 const bookDetailsElement = document.querySelector(".book-details");
 
 //class: thumbnail
-const thumbnailElement = document.querySelector(".thumnail");
+const thumbnailElement = document.querySelector(".thumbnail");
 
 //class: bookname
 const bookNameElement = document.querySelector(".bookname");
@@ -32,15 +32,15 @@ const oldPriceElement = document.querySelector(".old-price");
 //class: new-price
 const newPriceElement = document.querySelector(".new-price");
 //class: description-paragraph
-const descriptionElement = document.querySelector("description-paragraph");
+const descriptionElement = document.querySelector(".description-paragraph");
 //class: publisher
-const publisherElement = document.querySelector("publisher");
+const publisherElement = document.querySelector(".publisher");
 //class: publish-date
-const publishDateElement = document.querySelector("publish-date");
+const publishDateElement = document.querySelector(".publish-date");
 //class: publish-date
-const dimensionElement = document.querySelector("dimension");
+const dimensionElement = document.querySelector(".dimension");
 //class: language
-const languageElement = document.querySelector("language");
+const languageElement = document.querySelector(".language");
 //class: language
 
 //Spread operator
@@ -61,6 +61,7 @@ const {
   thumbnail,
   description,
 } = productDetails;
+
 // Lazy render (in the case there is not enough time)
 // Fill the book container with book details
 // bookDetailsElement.innerHTML = `
@@ -82,12 +83,18 @@ const {
 // Render with styled CSS
 //use template string to render
 // render bookName
-thumbnailElement.innerHTML = `${thumbnail}`;
+
+thumbnailElement.innerHTML = `
+<img src ="
+${thumbnail}">
+`;
 bookNameElement.innerHTML = `${bookName}`;
+
 authorElement.innerHTML = `${author}`;
 bookTypeElement.innerHTML = `${type}`;
 oldPriceElement.innerHTML = `${oldPrice}`;
-newPriceElement.innerHTML = `${newPrice}`;
+newPriceElement.innerHTML = `  ${newPrice}`;
+
 descriptionElement.innerHTML = `${description}`;
 publisherElement.innerHTML = `${publisher}`;
 publishDateElement.innerHTML = `${publishDate}`;

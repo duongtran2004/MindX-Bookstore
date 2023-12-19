@@ -2,6 +2,7 @@
 import bookDetails from "../data/books-detail.js";
 // Find element with class book=slides, and store it into a variable
 const BookSlide = document.querySelector(".book-slides");
+console.log(BookSlide);
 
 // Function to handle thumbnail clicks (empty function for now, then assign as event handler to BookSlide)
 
