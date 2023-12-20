@@ -43,11 +43,14 @@ const descriptionElement = document.querySelector(".description-paragraph");
 const publisherElement = document.querySelector(".publisher");
 //class: publish-date
 const publishDateElement = document.querySelector(".publish-date");
-//class: publish-date
+//class: dimension
 const dimensionElement = document.querySelector(".dimension");
 //class: language
 const languageElement = document.querySelector(".language");
-//class: language
+//class: pages length
+const pageLengthElement = document.querySelector(".page");
+//class: weight
+const weightElement = document.querySelector(".weight");
 
 //Spread operator
 // => extract properties from productDeatils object => make them become variables => so I can
@@ -109,7 +112,8 @@ dimensionElement.innerHTML = `${dimensions}`;
 languageElement.innerHTML = `${language}`;
 
 bookTypeBelowElement.innerHTML = `${type}`;
-
+pageLengthElement.innerHTML = `${pageLength}`;
+weightElement.innerHTML = `${weight}`;
 console.log(
   "🚀 ~ file: books-detail.js:112 ~ bookTypeElement:",
   bookTypeElement
